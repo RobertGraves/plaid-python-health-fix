@@ -84,14 +84,14 @@ class InstitutionStatus(ModelNormal):
         """
         lazy_import()
         return {
-            'item_logins': (ProductStatus,),  # noqa: E501
-            'transactions_updates': (ProductStatus,),  # noqa: E501
-            'auth': (ProductStatus,),  # noqa: E501
-            'identity': (ProductStatus,),  # noqa: E501
-            'investments_updates': (ProductStatus,),  # noqa: E501
-            'liabilities_updates': (ProductStatus,),  # noqa: E501
-            'liabilities': (ProductStatus,),  # noqa: E501
-            'investments': (ProductStatus,),  # noqa: E501
+            'item_logins': (ProductStatus,none_type),  # noqa: E501
+            'transactions_updates': (ProductStatus,none_type),  # noqa: E501
+            'auth': (ProductStatus,none_type),  # noqa: E501
+            'identity': (ProductStatus,none_type),  # noqa: E501
+            'investments_updates': (ProductStatus,none_type),  # noqa: E501
+            'liabilities_updates': (ProductStatus,none_type),  # noqa: E501
+            'liabilities': (ProductStatus,none_type),  # noqa: E501
+            'investments': (ProductStatus,none_type),  # noqa: E501
             'health_incidents': ([HealthIncident], none_type,),  # noqa: E501
         }
 

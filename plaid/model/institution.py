@@ -99,7 +99,7 @@ class Institution(ModelNormal):
             'url': (str, none_type,),  # noqa: E501
             'primary_color': (str, none_type,),  # noqa: E501
             'logo': (str, none_type,),  # noqa: E501
-            'status': (InstitutionStatus,),  # noqa: E501
+            'status': (InstitutionStatus,none_type),  # noqa: E501
             'payment_initiation_metadata': (PaymentInitiationMetadata,),  # noqa: E501
             'auth_metadata': (AuthMetadata,),  # noqa: E501
         }

@@ -85,7 +85,7 @@ class HealthIncident(ModelNormal):
             'start_date': (datetime,),  # noqa: E501
             'title': (str,),  # noqa: E501
             'incident_updates': ([IncidentUpdate],),  # noqa: E501
-            'end_date': (datetime,str),  # noqa: E501
+            'end_date': (datetime,none_type),  # noqa: E501
         }
 
     @cached_property
